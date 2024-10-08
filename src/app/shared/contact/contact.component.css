@@ -1,0 +1,22 @@
+.Contact{
+    display: flex;
+    flex-direction: column;
+    padding: 3vh 5vw;
+    background-color: #F5F7F9;
+}
+
+.Contact__heading{
+    margin-bottom: 8px;
+    color: #C8CDD3;
+    font-size: 12px;
+}
+
+.Contact__information{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.Contact__information>a{
+    text-decoration: none;
+    color: #000;
+}

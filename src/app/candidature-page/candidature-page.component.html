@@ -1,0 +1,76 @@
+<app-header></app-header>
+<app-navigation></app-navigation>
+<main>
+    <section class="Candidature container">
+        <h2 class="Candidature__title">Vos candidatures</h2>
+        <table class="Candidature__table">
+            <thead >
+            <tr class="Candidature__table__row">
+                <th class="Candidature__table__header"># de Offre</th>
+                <th class="Candidature__table__header">Intitulé de l'offre</th>
+                <th class="Candidature__table__header">Date de mise en ligne</th>
+                <th class="Candidature__table__header">Status de la candidature</th>
+                <th class="Candidature__table__header">Retour RH</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="Candidature__table__row">
+                <td class="Candidature__table__item">3234</td>
+                <td  class="Candidature__table__item">Chef de service déploiement</td>
+                <td  class="Candidature__table__item">13/08/2018</td>
+                <td  class="Candidature__table__item">En cours</td>
+                <td  class="Candidature__table__item Candidature__table__item--pending">Entretien le 31/08/2018</td>
+            </tr>
+            <tr class="Candidature__table__row">
+                <td  class="Candidature__table__item">3237</td>
+                <td  class="Candidature__table__item">Contrôleur de Gestion</td>
+                <td  class="Candidature__table__item">14/08/2018</td>
+                <td  class="Candidature__table__item">Entretien le 31/08/2018</td>
+                <td  class="Candidature__table__item Candidature__table__item--failed">Rejetée</td>
+            </tr>
+            <tr class="Candidature__table__row">
+                <td  class="Candidature__table__item">3237</td>
+                <td  class="Candidature__table__item">Conseillère clientelle</td>
+                <td  class="Candidature__table__item">09/08/2018</td>
+                <td  class="Candidature__table__item">Entretien le 31/08/2018</td>
+                <td  class="Candidature__table__item Candidature__table__item--success">Accepté</td>
+            </tr>
+        </tbody>
+        </table>
+    </section>
+
+    <section class="Offres">
+        <div class="Offres__container">
+            <h2 class="Offres__container__titre">Offres similaires</h2>
+            <article class="Offres__container__card">
+                <h4  class="Offres__container__card__title">CDD</h4>
+                <h2 class="Offres__container__card__job">International Marketing Project Manager H/F</h2>
+                <div class="Offres__container__card__location">
+                    <img src="assets/location.svg" alt="location">
+                    <h3>Brazzaville</h3>
+                </div>
+            </article>
+    
+            <article class="Offres__container__card">
+                <h4 class="Offres__container__card__title">CDI</h4>
+                <h2 class="Offres__container__card__job">Contrôleur de Gestion Sociale H/F</h2>
+                <div class="Offres__container__card__location">
+                    <img src="assets/location.svg" alt="location">
+                    <h3>Point-Noire</h3>
+                </div>
+            </article>
+    
+            <article class="Offres__container__card">
+                <h4 class="Offres__container__card__title">CDD</h4>
+                <h2 class="Offres__container__card__job">Conseiller Clientèle BtoB, H/F, CDD</h2>
+                <div class="Offres__container__card__location">
+                    <img src="assets/location.svg" alt="location">
+                    <h3>Point-Noire</h3>
+                </div>
+            </article>
+        </div>
+
+    </section>
+</main>
+<app-contact></app-contact>
+<app-footer></app-footer>

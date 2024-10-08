@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #FFFFFF;
+    user-select: none;
+}
+
+h2{
+    font-size: 30px;
+    border-left: 2px solid #E60028;
+    padding-left: 16px;
+    font-weight: 400;
+}
+
+
+.container {
+    padding: 0 5vw;
+}
+
+.Candidature{
+    display: flex;
+    flex-direction: column;
+}
+
+.Candidature__title{
+    margin-top: 56px;
+    margin-bottom: 24px;
+}
+
+.Candidature__table{
+    margin-bottom: 44px;
+    border-collapse: collapse;
+}
+
+.Candidature__table__row{
+    border: 1px solid #F2F2F2;
+}
+
+.Candidature__table__header{
+    text-align: left;
+    color: #8696A6;
+    text-transform: uppercase;
+    padding: 1vh 2vw;
+}
+
+.Candidature__table__item{
+    padding: 1vH 2vw;
+    font-weight: 600;
+}
+
+.Candidature__table__item--success{
+    color: #00B946;
+}
+
+.Candidature__table__item--failed{
+    color: #E60028;
+}
+
+.Candidature__table__item--pending{
+    color: #215BE1;
+}
+
+.Offres{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+    padding: 0 8vw;
+}
+
+.Offres__container {
+    background-color: #F5F7F9;
+    padding: 10vh 14vw;
+}
+
+.Offres__container__card{
+    background-color: #FFFFFF;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0px 8px 8px rgba(87, 87, 87, 0.116);
+    padding: 2vw;
+}
+
+.Offres__container__card__title{
+    color: #E60028;
+    font-size: 17px;
+}
+
+.Offres__container__card__job{
+   border: none;
+   font-weight: 300;
+   font-size: 25px;
+   padding: 0;
+   margin: 2vh 0;
+}
+
+.Offres__container__card__location{
+    display: flex;
+    align-items: center;
+}
+
+.Offres__container__card__location>h3{
+    font-weight: 300;
+    margin-left: 8px;
+}

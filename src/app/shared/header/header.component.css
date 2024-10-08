@@ -1,0 +1,40 @@
+.header{
+    display: flex;
+    padding: 2vw 5vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+}
+
+.header__title{
+    text-transform: uppercase;
+}
+
+.header__actions{
+    display: flex;
+    align-items: center;
+}
+
+.header__avatar{
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #E60028;
+    padding: 12px 12px ;
+    border-radius: 50%;
+}
+
+.header__profile{
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    margin:0px 10px;
+    padding-right: 18px;
+    border-right: 1px solid #E3E3E3;
+}
