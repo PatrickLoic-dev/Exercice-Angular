@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../shared/header/header.component';
-import { NavigationComponent } from '../shared/navigation/navigation.component';
-import { FooterComponent } from '../shared/footer/footer.component';
-import { ContactComponent } from '../shared/contact/contact.component';
+import { HeaderComponent } from '../../shared/header/header.component';
+import { NavigationComponent } from '../../shared/navigation/navigation.component';
+import { FooterComponent } from '../../shared/footer/footer.component';
+import { ContactComponent } from '../../shared/contact/contact.component';
 import { CommonModule } from '@angular/common';
 
 type Offres = {

@@ -1,0 +1,102 @@
+<section class="hero">
+    <img src="../assets/background image.png">
+    <div class="hero__content">
+        <span></span>
+        <h2>Programme de recrutement de jeunes cadres</h2>
+    </div>
+</section>
+
+<form [formGroup]="formValue">
+<section class="Form">
+    <h5>Offres disponibles><span>Offre#324</span></h5>
+    <h2>Offre #324: International Marketing Project Manager H/F</h2>
+        <div class="Form__input">
+            <label for="Name">Nom</label>
+            <input type="text" id="Name" name="Name" formControlName="name" required>
+        </div>
+        <div class="Form__input">
+            <label for="FirstName">Prenom</label>
+            <input type="text" id="FirstName" name="FirstName"  formControlName="surname"  required>
+        </div>
+    <div class="Form__row">
+        <div class="Form__input">
+            <label for="Birthday">Date de naissance</label>
+            <input type="date" id="Birthday" name="Birthday" formControlName="birthDate"  required>
+        </div>
+        <div class="Form__input">
+            <label for="BirthPlace">Lieu de naissance</label>
+            <input type="text" id="BirthPlace" name="BirthPlace"  formControlName="lieuDeNaissance" required>
+        </div>
+    </div>
+    <div class="Form__input">
+        <label for="Mail">Adresse E-mail</label>
+        <input type="email" id="Mail" name="Mail" formControlName="email"  required>
+    </div>
+    <div class="Form__input">
+        <label for="Name">Niveau d'études</label>
+        <input type="text" id="Name" name="Name" formControlName="niveauEtude"  required>
+    </div>
+    <div class="Form__input">
+        <label for="Name">Domaine d'études</label>
+        <input type="text" id="Name" name="Name" formControlName="domaineEtude"  required>
+    </div>
+    <div class="Form__row">
+        <h4>Telecharger votre CV : </h4>
+        <input type="file" name="CV" id="CV" hidden>
+        <label for="CV" class="Form__input__file">Choose File</label>
+        <button class="Form__row__button Form__row__button--red">Upload</button>
+        <button class="Form__row__button">Aperçu</button>
+    </div>
+
+    <h4>Entrer vos differentes experiences professionnelles:</h4>
+    <table class="Form__table">
+        <thead>
+            <tr class="Form__table__row">
+                <th class="Form__table__header">Debut</th>
+                <th class="Form__table__header">Fin</th>
+                <th class="Form__table__header">Intitulé du poste</th>
+                <th class="Form__table__header">Description et realisation</th>
+                <th class="Form__table__header">Société</th>
+                <th class="Form__table__header"></th>
+                <th class="Form__table__header"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="Form__table__row">
+                <td class="Form__table__item">Jan 2015</td>
+                <td class="Form__table__item">Mars 2018</td>
+                <td class="Form__table__item">Contrôleur de Gestion</td>
+                <td class="Form__table__item">Déploiement de la stratégie financière définie par la Direction. Contrôle et gestion prévisionnelle des coûts, analyse des écarts</td>
+                <td class="Form__table__item">BANQUE POPULAIRE</td>
+                <td class="Form__table__item"><button><img src="../assets/edit.svg" alt="edit button"></button></td>
+                <td class="Form__table__item"><button><img src="../assets/delete.svg" alt="edit button"></button></td>
+            </tr>
+            <tr class="Form__table__row">
+                <td colspan="7"><span>+ Ajouter</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <section class="Form__additional__info">
+        <div class="Form__additional__info__column">
+            <label for="motivation">En quelques mots, declinez vos motivations, intérêts et perspectives concernant ce poste:</label>
+            <textarea type="text" name="motivation" id="motivation" formControlName="motivation"  ></textarea>
+        </div>
+    
+        <div class="Form__additional__info__column">
+            <div class="Form__additional__info__row">
+                <h4>Ajoutez des documents si necessaires:</h4>
+                <button class="Form__row__button Form__row__button--red">Upload</button>
+            </div>
+            <input type="file" name="document" id="document" hidden>
+            <label for="document" class="Form__input__file Form__input__file--Smooth">Choose File</label>
+        </div>
+    </section>
+</section>
+
+
+<section class="Form__validation">
+    <input type="submit" class="Form__row__button Form__row__button--red" value="Valider" (click)="saveForm()">
+    <button class="Form__row__button ">Sauvegarder les modifications</button>
+</section>
+</form>

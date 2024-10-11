@@ -1,0 +1,183 @@
+h2{
+    font-size: 30px;
+    border-left: 2px solid #E60028;
+    padding-left: 16px;
+    font-weight: 400;
+}
+
+.hero{
+    padding: 0 2vw;
+}
+
+.hero>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.hero__content{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 430px;
+    height: 320px;
+    top: 19.7%;
+    left: 12%;
+    background-color: #E60028;
+    padding: 0.5vw 1vw 3vw ;
+}
+
+.hero__content>span{
+    height: 30px;
+    width: 2px;
+    background-color: #FFF;
+}
+
+.hero__content>h2{
+    border: none;
+    padding: 0;
+    color: #FFF;
+    font-weight: 100;
+    margin-top: 1vw;
+}
+
+
+.Form{
+    margin: 12vw 5vw 0vw;
+}
+
+.Form__input{
+    display: flex;
+    flex-direction: column;
+    margin: 1vw 0;
+}
+.Form__input>label{
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #8696A6;
+    font-size: 12px;
+    margin-bottom: 1vw;
+}
+
+.Form__input__file{
+        color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin:0 1vw;
+        background-color: #f5f7f9;
+        width: 209px;
+        height: 36px;
+}
+
+.Form__input__file--Smooth{
+    background-color: #FFF;
+    border: 1px solid #C7C7C7;
+    width: 448px;
+    height: 52px;
+    margin: 0 0;
+}
+
+.Form__input>input{
+    width: 448px;
+    height: 40px;
+    border: 1px solid #C7C7C7;
+}
+
+.Form__row{
+    display: flex;
+    margin-bottom: 2vw;
+    align-items: center;
+}
+
+.Form__row input{
+    margin-right: 1vw;
+}
+
+.Form__row__button{
+    width: fit-content;
+    height: 36px;
+    text-transform: uppercase;
+    background-color: #FFF;
+    border : 1px solid #a7a7a7;
+    margin-right: 2vw;
+    padding: 8px 24px;
+}
+
+.Form__row__button--red{
+    background-color: #E60028;
+    color: #FFF;
+    border: none;
+}
+
+.Form__table{
+    margin-bottom: 44px;
+    border-collapse: collapse;
+}
+
+.Form__table__row{
+    border: 1px solid #F2F2F2;
+    display: flex;
+}
+
+.Form__table__header{
+    text-align: left;
+    color: #8696A6;
+    text-transform: uppercase;
+    padding: 1vh 2vw;
+    width: 100%;
+}
+
+.Form__table__item{
+    padding: 1vh 2vw;
+    font-weight: 600;
+    background-color: #F5F7F9;
+    display: flex;
+    align-items: center;
+    width: 160px;
+}
+
+.Form__table__item>button{
+    border: none;
+    background-color: transparent;
+}
+
+
+.Form__additional__info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Form__additional__info__column{
+    display: flex;
+    flex-direction: column;
+}
+
+.Form__additional__info__column>label{
+    font-size: 17px;
+    margin-bottom: 1vw;
+}
+
+.Form__additional__info__column>textarea{
+    width: 600px;
+    height: 400px;
+    border: 1px solid #C7C7C7;
+    margin-bottom: 1vw;
+    resize: none;
+}
+
+.Form__additional__info__row{
+    display: flex;
+    align-items: center;
+}
+
+.Form__validation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw 0;
+    padding: 1vw 0;
+    box-shadow: 3px 0px 8px 8px rgba(87, 87, 87, 0.116);
+}
