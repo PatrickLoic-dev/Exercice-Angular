@@ -4,7 +4,7 @@ export class Form {
     public birthDate? : Date;
     public lieuDeNaissance? : string;
     public email? : string;
-    public niveauEtude? : string;
+    public niveauEtude? : number;
     public domaineEtude? : string;
     public motivation? : string;
 }

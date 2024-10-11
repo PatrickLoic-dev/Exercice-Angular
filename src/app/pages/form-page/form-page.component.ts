@@ -19,13 +19,15 @@ export class FormPageComponent implements OnInit {
 
   form : Form = new Form();
 
+  forms : Form[] = [];
+
   private service: FormService = inject(FormService);
 
   constructor (private formBuilder : FormBuilder) {}
 
   formValue!: FormGroup;
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
     this.formValue = this.formBuilder.group({
       name: [''],
       surname: [''],
@@ -36,6 +38,8 @@ export class FormPageComponent implements OnInit {
       domaineEtude: [''],
       motivation: [''],
   });
+
+  await this.getData();
   }
 
   async saveForm() {
@@ -45,10 +49,22 @@ export class FormPageComponent implements OnInit {
       await this.service.save(this.form)
 
       this.formValue.reset();
+
+      await this.getData();
     }catch (error : any){
       console.error(error);
     }  
-}
+  }
+
+  async getData() {
+    try {
+      await this.service.get().then((data : any) => {
+        this.forms = data;
+      });
+    } catch (error : any) {
+      console.error(error);
+    }
+  }
 
   
 
